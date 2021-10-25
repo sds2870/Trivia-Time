@@ -8,28 +8,31 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <div>
+    <div id="display" style="display: none;">
+     <div>
         <h2>Question: <span id="question"></span></h2>
         <h4>Category is: <span id="category"></span></h4>
     </div>
     <div>
-        <form>
             <p>Please select the correct answer below:</p>
             <div>
-                <input type="radio" name="choice" id="choice1">
-                <label for="choice1"></label>
-                <input type="radio" name="choice" id="choice2">
-                <label for="choice2"></label>
-                <input type="radio" name="choice" id="choice3">
-                <label for="choice3"></label>
-                <input type="radio" name="choice" id="choice4">
-                <label for="choice4"></label>
+                <input type="radio" name="choice" id="choice1" value="">
+                <label for="choice1" id="choice1label"></label>
+                <input type="radio" name="choice" id="choice2" value="">
+                <label for="choice2" id="choice2label"></label>
+                <input type="radio" name="choice" id="choice3" value="">
+                <label for="choice3" id="choice3label"></label>
+                <input type="radio" name="choice" id="choice4" value="">
+                <label for="choice4" id="choice4label"></label>
             </div>
             <div>
-                <button type="submit">Guess!</button>
+                <button id="guess">Guess!</button>
             </div>    
-        </form>
-
+            <h1 id="result"></h1>
+            <div>
+                <button id="new">Next Question!</button>
+            </div>
+     </div>
     </div>
     <script src="./code.js"></script>
 </body>
